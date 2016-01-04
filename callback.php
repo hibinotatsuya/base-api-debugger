@@ -3,7 +3,7 @@
 require_once("config.php");
 
 $code = '';
-if (!empty($_GET['code'])) {
+if (isset($_GET['code'])) {
     $code = $_GET['code'];
 }
 
