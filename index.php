@@ -14,7 +14,7 @@ $oauth_url = API_HOST . '/' . API_VERSION . '/oauth/authorize?response_type=code
 </head>
 <body>
 	<h1>BASE API Debugger</h1>
-	<h2>GET /1/oauth/authorize</h2>
+	<h2>GET /<?php echo API_VERSION; ?>/oauth/authorize</h2>
 	<div><a href="<?php echo $oauth_url; ?>" target="_blank"><?php echo $oauth_url; ?></a></div>
 </body>
 </html>

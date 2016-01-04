@@ -37,7 +37,7 @@ $parsed_response = json_decode($response_body, true);
 </head>
 <body>
 	<h1>BASE API Debugger</h1>
-	<h2>POST /1/oauth/token</h2>
+	<h2>POST /<?php echo API_VERSION; ?>/oauth/token</h2>
 	<textarea style="width:600px;height:200px;"><?php echo $response_body; ?></textarea>
 	<pre><?php var_dump($parsed_response); ?></pre>
 </body>
