@@ -3,8 +3,8 @@
 require_once("config.php");
 
 $code = '';
-if (!empty($_REQUEST['code'])) {
-    $code = $_REQUEST['code'];
+if (!empty($_GET['code'])) {
+    $code = $_GET['code'];
 }
 
 $params = array(
