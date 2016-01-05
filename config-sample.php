@@ -1,5 +1,8 @@
 <?php
 // config.phpにリネームする
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 define('API_HOST', 'https://api.thebase.in');
 define('API_VERSION', '1');
 define('CLIENT_ID', '');
@@ -8,5 +11,3 @@ define('REDIRECT_URI', '');
 
 define('CLIENT_ID_FOR_SEARCH', '');
 define('CLIENT_SECRET_FOR_SEARCH', '');
-
-ini_set('display_errors', 1);
