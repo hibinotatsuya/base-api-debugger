@@ -14,7 +14,6 @@ $params = array(
 	'code'          => $code,
 	'refresh_token' => $refresh_token,
 );
-var_dump($params);
 $headers = array(
 	'Content-Type: application/x-www-form-urlencoded',
 );
