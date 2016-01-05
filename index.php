@@ -24,6 +24,37 @@ $oauth_url = API_HOST . '/' . API_VERSION . '/oauth/authorize?response_type=code
 	</form>
 	<br>
 	<div><a href="oauth_token.php">POST /1/oauth/token</a></div>
+	<br>
+	<div><a href="users_me.php">GET /1/users/me</a></div>
+	<br>
 	<div><a href="items.php">GET /1/items</a></div>
+	<div><a href="items_detail.php">GET /1/items/detail/:item_id</a></div>
+	<div><a href="items_add.php">POST /1/items/add</a></div>
+	<div><a href="items_edit.php">POST /1/items/edit</a></div>
+	<div><a href="items_delete.php">POST /1/items/delete</a></div>
+	<div><a href="items_add_image.php">POST /1/items/add_image</a></div>
+	<div><a href="items_delete_image.php">POST /1/items/delete_image</a></div>
+	<div><a href="items_edit_stock.php">POST /1/items/edit_stock</a></div>
+	<div><a href="items_delete_variation.php">POST /1/items/delete_variation</a></div>
+	<br>
+	<div><a href="categories.php">GET /1/categories</a></div>
+	<div><a href="categories_add.php">POST /1/categories/add</a></div>
+	<div><a href="categories_edit.php">POST /1/categories/edit</a></div>
+	<div><a href="categories_delete.php">POST /1/categories/delete</a></div>
+	<br>
+	<div><a href="item_categories_detail.php">GET /1/item_categories/detail/:item_id </a></div>
+	<div><a href="item_categories_add.php">POST /1/item_categories/add</a></div>
+	<div><a href="item_categories_delete.php">POST /1/item_categories/delete</a></div>
+	<br>
+	<div><a href="orders.php">GET /1/orders</a></div>
+	<div><a href="orders_detail.php">GET /1/orders/detail/:unique_key</a></div>
+	<div><a href="orders_edit_status.php">POST /1/orders/edit_status</a></div>
+	<br>
+	<div><a href="savings.php">GET /1/savings</a></div>
+	<br>
+	<div><a href="delivery_companies.php">GET /1/delivery_companies</a></div>
+	<br>
+	<div><a href="search.php">GET /1/search</a></div>
+	<div><a href="search_refresh.php">GET /1/search/refresh</a></div>
 </body>
 </html>
