@@ -42,7 +42,7 @@ if (!empty($_POST)) {
 	<h1><a href="index.php">BASE API Debugger</a></h1>
 	<h2>GET /<?php echo API_VERSION; ?>/items</h2>
 	<form method="POST" action="items.php">
-		access_token <input type="text" name="token"value="<?php echo $token; ?>" style="width:300px"><br>
+		access_token <input type="text" name="token" value="<?php echo $token; ?>" style="width:300px"><br>
 		order <input type="text" name="order" value="<?php echo $order; ?>" style="width:300px"><br>
 		sort <input type="text" name="sort" value="<?php echo $sort; ?>" style="width:300px"><br>
 		limit <input type="text" name="limit" value="<?php echo $limit; ?>" style="width:300px"><br>
