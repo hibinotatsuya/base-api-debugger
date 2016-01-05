@@ -29,6 +29,10 @@ $context = stream_context_create($request_options);
 
 $response_body = file_get_contents(API_HOST . '/' . API_VERSION . '/oauth/token', false, $context);
 $parsed_response = json_decode($response_body, true);
+
+if (isset($parsed_response['access_token'])) {
+	setcookie('base_access_token', $parsed_response['access_token']);
+}
 ?>
 <html>
 <head>

@@ -3,6 +3,9 @@
 require_once("config.php");
 
 $token = (isset($_POST['token'])) ? $_POST['token'] : NULL;
+if (empty($token) && isset($_COOKIE['base_access_token'])) {
+	$token = $_COOKIE['base_access_token'];
+}
 
 $headers = array(
 	'Authorization: Bearer ' . $token,

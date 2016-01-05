@@ -3,6 +3,9 @@
 require_once("config.php");
 
 $token = (isset($_POST['token'])) ? $_POST['token'] : NULL;
+if (empty($token) && isset($_COOKIE['base_access_token'])) {
+	$token = $_COOKIE['base_access_token'];
+}
 $order = (isset($_POST['order'])) ? $_POST['order'] : 'list_order';
 $sort = (isset($_POST['sort'])) ? $_POST['sort'] : 'asc';
 $limit = (isset($_POST['limit'])) ? $_POST['limit'] : 10;
