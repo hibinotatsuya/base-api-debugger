@@ -2,6 +2,7 @@
 // config.phpにリネームする
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+ini_set('date.timezone', 'Asia/Tokyo');
 
 define('API_HOST', 'https://api.thebase.in');
 define('API_VERSION', '1');
