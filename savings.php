@@ -26,6 +26,10 @@ $request_options = array(
 		'header'  => implode("\r\n", $headers),
 		'ignore_errors' => true,
 	),
+	'ssl' => array(
+		'verify_peer' => false,
+		'verify_peer_name' => false,
+	),
 );
 $context = stream_context_create($request_options);
 

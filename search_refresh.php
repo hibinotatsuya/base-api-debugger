@@ -16,6 +16,10 @@ $request_options = array(
 		'method'  => 'GET',
 		'ignore_errors' => true,
 	),
+	'ssl' => array(
+		'verify_peer' => false,
+		'verify_peer_name' => false,
+	),
 );
 $context = stream_context_create($request_options);
 
