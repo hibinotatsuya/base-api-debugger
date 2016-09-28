@@ -8,10 +8,12 @@ if (empty($token) && isset($_COOKIE['base_access_token'])) {
 }
 $name = (isset($_POST['name'])) ? $_POST['name'] : NULL;
 $list_order = (isset($_POST['list_order'])) ? $_POST['list_order'] : NULL;
+$parent_number = (isset($_POST['parent_number'])) ? $_POST['parent_number'] : NULL;
 
 $params = array(
 	'name' => $name,
 	'list_order' => $list_order,
+	'parent_number' => $parent_number,
 );
 $headers = array(
 	'Authorization: Bearer ' . $token,
@@ -50,6 +52,7 @@ if (!empty($_POST)) {
 		access_token <input type="text" name="token" value="<?php echo $token; ?>" style="width:300px"><br>
 		name <input type="text" name="name" value="<?php echo $name; ?>" style="width:300px"><br>
 		list_order <input type="text" name="list_order" value="<?php echo $list_order; ?>" style="width:300px"><br>
+		parent_number <input type="text" name="parent_number" value="<?php echo $parent_number; ?>" style="width:300px"><br>
 		<input type="submit" value="submit" name="submit">
 	</form>
 	<textarea style="width:600px;height:200px;"><?php echo $response_body; ?></textarea>
