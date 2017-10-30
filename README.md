@@ -1,2 +1,2 @@
 # base-api-debugger
-BASE API Debugger
+2017/10/30 BASEのリポジトリに移植しました。そっちを使ってください！
